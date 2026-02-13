@@ -3,7 +3,7 @@ apply plugin: "java"
 version = '1.0'
 
 // Use the repo folder name for the jar
-def jarName = project.name   // <- this will match your repo, e.g., Earthquake-and-Asteroid-Mod
+def jarName = "Earthquake-and-Asteroid-Mod"   
 
 // Source files
 sourceSets.main.java.srcDirs = ["src/EarthquakeAsteroidMod"]
