@@ -18,7 +18,7 @@ import mindustry.content.Planets;
 import mindustry.core.World;
 import mindustry.entities.Effect;
 import mindustry.game.EventType;
-import mindustry.content.Sounds;
+import mindustry.gen.Sounds;
 import mindustry.maps.generators.PlanetGenerator;
 import mindustry.maps.planet.*;
 import mindustry.world.Tile;
