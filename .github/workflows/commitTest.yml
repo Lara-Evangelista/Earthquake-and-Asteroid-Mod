@@ -1,11 +1,8 @@
 name: Build Mod
-
 on: [push, pull_request]
-
 jobs:
   buildJar:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up PATH
@@ -19,14 +16,14 @@ jobs:
       run: |
         chmod +x ./gradlew
         ./gradlew deploy
-    - name: Upload built jar file
-      uses: actions/upload-artifact@v4
-      with:
-        name: ${{ github.event.repository.name }}
-        path: build/libs/${{ github.event.repository.name }}.jar
-    - name: List build outputs
+    - name: List build outputs  # MOVE THIS BEFORE UPLOAD
       run: |
         echo "Contents of build/libs:"
         ls -la build/libs/ || echo "build/libs not found"
         echo "Finding all JAR files:"
         find . -name "*.jar" -type f
+    - name: Upload built jar file
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ github.event.repository.name }}
+        path: build/libs/${{ github.event.repository.name }}.jar
