@@ -413,7 +413,7 @@ public class AsteroidMod{
             Vars.renderer.shake(shakeIntensity, 80f);
 
         // Play sound
-        Sounds.explosionbig.at(asteroid.targetX, asteroid.targetY, 1.5f);
+        Sounds.explosion.at(asteroid.targetX, asteroid.targetY, 1.5f);
 
         // Damage player if in range
         if (Vars.player != null && Vars.player.unit() != null) {
@@ -609,4 +609,5 @@ public class AsteroidMod{
         }
     }
 }
+
 
