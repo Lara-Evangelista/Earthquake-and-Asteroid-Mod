@@ -24,3 +24,9 @@ jobs:
       with:
         name: ${{ github.event.repository.name }}
         path: build/libs/${{ github.event.repository.name }}.jar
+    - name: List build outputs
+      run: |
+        echo "Contents of build/libs:"
+        ls -la build/libs/ || echo "build/libs not found"
+        echo "Finding all JAR files:"
+        find . -name "*.jar" -type f
