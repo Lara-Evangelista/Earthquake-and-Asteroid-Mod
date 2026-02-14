@@ -14,7 +14,7 @@ We thought that adding RNG-based events to the game would introduce new challeng
 
 # Instructions for Using the Mod
 
-*Note: The JAR files are available in the Releases tab.*
+*(Note: The JAR files are available in the Releases tab.)*
 
 1. Once the mod is built, press **Windows + R** and type `%APPDATA%`.
 2. This will open a folder. Navigate to the `Mindustry` folder, then open the `mods` folder.
